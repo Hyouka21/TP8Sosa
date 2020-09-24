@@ -36,6 +36,16 @@ public class Materia {
     public void setAnio(int anio) {
         this.anio = anio;
     }
+    @Override
+    public boolean equals(Object ob){
+    if(ob!=null && ob instanceof Materia){
+    Materia m=(Materia)ob;
+    return (getIdMateria()==(m.getIdMateria()))&& (getNombre().equals(m.getNombre())) && (getAnio()==m.getAnio());
+    }else {return false;}
+    }
     
-    
+    @Override
+    public int hashCode(){
+    return nombre.hashCode()+ anio+idMateria;
+    }
 }
