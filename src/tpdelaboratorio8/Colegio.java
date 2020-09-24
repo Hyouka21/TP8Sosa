@@ -20,8 +20,8 @@ public class Colegio {
         alum2.agregarMateria(lab);
         alum2.agregarMateria(ing);
         alum2.agregarMateria(lab1); 
-        System.out.println(alum1.cantidadMaterias());
-        System.out.println(alum2.cantidadMaterias());
+        System.out.println("las materias del alumno 1 son "+alum1.cantidadMaterias());
+        System.out.println("las materias del alumno 2 son "+alum2.cantidadMaterias());
         
     }
     
